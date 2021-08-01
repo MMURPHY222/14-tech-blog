@@ -31,20 +31,13 @@ Post.init(
           key: 'id',
         },
       },
-      user_name: {
-          type: DataTypes.STRING,
-          references: {
-              model: 'user',
-              key: 'name',
-          },
-      },
     },
     {
       sequelize,
-      timestamps: false,
+      // timestamps: false,
       freezeTableName: true,
-      underscored: true,
-      modelName: 'project',
+      // underscored: true,
+      modelName: 'post',
     }
   );
   
